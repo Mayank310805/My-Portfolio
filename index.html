@@ -1,0 +1,610 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: aqua;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(178, 178, 251);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+            height: 250px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            height: 50px;
+            font-size: 3rem;
+        }
+
+        .rightsection {
+            height: 50px;
+        }
+
+        .rightsection img {
+            width: 80%;
+            border-radius: 200px;
+            margin: 50px 0px;
+        }
+
+        #element {
+            color: rgb(77, 1, 147);
+        }
+
+        .secondsection {
+            margin: 90px auto;
+            margin-right: 1010px;
+            max-width: 80%;
+            color: white;
+            text-align: center;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+            
+        }
+        .text-gray{
+            color: grey;
+            margin-right: 54px;
+        }
+        .box{
+            height: 40px;
+            border: 2px solid red;
+            margin-left: 143px;
+            width: 120%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Mayank's website
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi my name is <span style="color: rgb(77, 1, 147);">mayank</span>
+                <div>i am a software engineer.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="Developer.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Past Experience.</h1>
+            <div class="box">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> developer.', 'ML engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Portfolio</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        header,
+        nav {
+            margin: 0;
+            padding: 0;
+            margin-top: -20px;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 80px;
+    background: linear-gradient(90deg, #1e1e3f, #3a3a8a);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #9c97f1;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #9c97f1;
+}
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+            height: 250px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection {
+            height: 50px;
+        }
+
+        .rightsection img {
+            width: 80%;
+            border-radius: 200px;
+            margin: 50px 0px;
+        }
+
+        #element {
+            color: rgb(77, 1, 147);
+        }
+
+        .secondsection {
+            margin: 90px auto;
+            max-width: 80%;
+            color: white;
+            text-align: center;
+            height: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: grey;
+            margin-right: 54px;
+        }
+
+        .experience {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .exp-item {
+            background-color: #1f1f3b;
+            padding: 20px;
+            border-left: 5px solid #9c97f1;
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .exp-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .exp-item h2 {
+            font-size: 1.3rem;
+            color: #9c97f1;
+            margin-bottom: 8px;
+        }
+
+        .exp-item p {
+            font-size: 1rem;
+            color: #cfcfcf;
+        }
+
+        .skills-section {
+            padding: 60px 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .skills-section h1 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #9c97f1;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .skill-card {
+            background-color: #1f1f3b;
+            padding: 25px 30px;
+            border: 2px solid #9c97f1;
+            border-radius: 12px;
+            width: 280px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background-color: #292960;
+        }
+
+        .skill-card h2 {
+            font-size: 1.3rem;
+            color: #9c97f1;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-size: 0.95rem;
+            color: #cfcfcf;
+            line-height: 1.4;
+        }
+
+        .projects-section {
+            padding: 60px 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .projects-section h1 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #9c97f1;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #1f1f3b;
+            padding: 25px 30px;
+            border: 2px solid #9c97f1;
+            border-radius: 12px;
+            width: 280px;
+            text-align: left;
+            color: #cfcfcf;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            background-color: #292960;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-card h2 {
+            font-size: 1.3rem;
+            color: #9c97f1;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .contact-section {
+            padding: 60px 100px;
+            text-align: center;
+            color: white;
+            background-color: rgb(0, 0, 40);
+        }
+
+        .contact-section h1 {
+            font-size: 2.2rem;
+            color: #9c97f1;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #9c97f1;
+            background-color: #1f1f3b;
+            color: white;
+            font-size: 1rem;
+            resize: none;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #c8c4f9;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #9c97f1;
+            color: black;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #b8b4fa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mayank's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi my name is <span style="color: rgb(77, 1, 147);">Mayank</span>
+                <div>I am </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="Developer.jpg" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection" id="Home">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Past Experience</h1>
+            <div class="experience">
+                <div class="exp-item">
+                    <h2>Member of AI Club</h2>
+                    <p>Actively contributed to tech events, workshops, and AI-based projects.</p>
+                </div>
+                <div class="exp-item">
+                    <h2>Operations - MMC</h2>
+                    <p>Managed event logistics and helped streamline club operations in the Magadh Mithila Club.</p>
+                </div>
+                <div class="exp-item">
+                    <h2>SRIP Research Internship - VIT Chennai</h2>
+                    <p>Worked on cutting-edge research in AI and smart cities under SRIP program at VIT Chennai.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="skills-section" id="skills">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h2>Web Development</h2>
+                    <p>Skilled in building responsive and modern websites using HTML, CSS, JavaScript, and frameworks
+                        like React.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Generative AI Tools</h2>
+                    <p>Experienced with AI tools like ChatGPT, Midjourney, and other LLMs to build intelligent and
+                        creative applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Machine Learning</h2>
+                    <p>Hands-on with ML algorithms, model training, and data analysis using Python, Scikit-learn, and
+                        TensorFlow.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Data Structures & Algorithms</h2>
+                    <p>Strong problem-solving skills with regular practice on platforms like LeetCode and Codeforces.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="projects-section" id="Project">
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <a href="https://github.com/your-username/StudySphere" class="project-card" target="_blank">
+                    <h2>StudySphere</h2>
+                    <p>An organized student dashboard with notes, streaks, to-dos, and study roadmaps.</p>
+                </a>
+                <a href="https://github.com/your-username/MackBot" class="project-card" target="_blank">
+                    <h2>MackBot</h2>
+                    <p>A ChatGPT-style AI chatbot assistant built to answer questions intelligently.</p>
+                </a>
+                <a href="https://github.com/your-username/Medical-Chatbot" class="project-card" target="_blank">
+                    <h2>Medical Chatbot</h2>
+                    <p>An AI-powered chatbot that helps users with symptom checks and medical guidance.</p>
+                </a>
+                <a href="https://github.com/your-username/LawyerChatbot" class="project-card" target="_blank">
+                    <h2>LawyerChatbot</h2>
+                    <p>Legal assistant bot that explains rights, laws, and offers basic legal advice.</p>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section class="contact-section" id="contact">
+            <h1>Contact Me</h1>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> developer.', 'ML enthusiast.','Generative AI enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
