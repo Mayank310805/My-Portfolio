@@ -1,610 +1,701 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: aqua;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(178, 178, 251);
-            font-size: 1.01rem;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            margin: 80px 0px;
-            height: 250px;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            /* background-color: red; */
-            height: 50px;
-            font-size: 3rem;
-        }
-
-        .rightsection {
-            height: 50px;
-        }
-
-        .rightsection img {
-            width: 80%;
-            border-radius: 200px;
-            margin: 50px 0px;
-        }
-
-        #element {
-            color: rgb(77, 1, 147);
-        }
-
-        .secondsection {
-            margin: 90px auto;
-            margin-right: 1010px;
-            max-width: 80%;
-            color: white;
-            text-align: center;
-            height: 80vh;
-        }
-        main hr{
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-        .secondsection h1{
-            font-size: 1.9rem;
-            
-        }
-        .text-gray{
-            color: grey;
-            margin-right: 54px;
-        }
-        .box{
-            height: 40px;
-            border: 2px solid red;
-            margin-left: 143px;
-            width: 120%;
-            height: 100px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="left">
-                Mayank's website
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Project</a></li>
-                    <li><a href="/">Contact me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi my name is <span style="color: rgb(77, 1, 147);">mayank</span>
-                <div>i am a software engineer.</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightsection">
-                <img src="Developer.jpg" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondsection">
-            <span class="text-gray">What i have done so far</span>
-            <h1>Past Experience.</h1>
-            <div class="box">
-            </div>
-        </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['<i>Web</i> developer.', 'ML engineer.'],
-            typeSpeed: 50,
-        });
-    </script>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development Portfolio</title>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            overflow-x: hidden;
-        }
-
-        header,
-        nav {
-            margin: 0;
-            padding: 0;
-            margin-top: -20px;
-        }
-
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 80px;
-    background: linear-gradient(90deg, #1e1e3f, #3a3a8a);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #9c97f1;
-    transition: width 0.3s ease;
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-.nav-links li a:hover {
-    color: #9c97f1;
-}
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            margin: 80px 0px;
-            height: 250px;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 3rem;
-        }
-
-        .rightsection {
-            height: 50px;
-        }
-
-        .rightsection img {
-            width: 80%;
-            border-radius: 200px;
-            margin: 50px 0px;
-        }
-
-        #element {
-            color: rgb(77, 1, 147);
-        }
-
-        .secondsection {
-            margin: 90px auto;
-            max-width: 80%;
-            color: white;
-            text-align: center;
-            height: auto;
-        }
-
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-
-        .secondsection h1 {
-            font-size: 1.9rem;
-        }
-
-        .text-gray {
-            color: grey;
-            margin-right: 54px;
-        }
-
-        .experience {
-            margin-top: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: flex-start;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .exp-item {
-            background-color: #1f1f3b;
-            padding: 20px;
-            border-left: 5px solid #9c97f1;
-            border-radius: 8px;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .exp-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .exp-item h2 {
-            font-size: 1.3rem;
-            color: #9c97f1;
-            margin-bottom: 8px;
-        }
-
-        .exp-item p {
-            font-size: 1rem;
-            color: #cfcfcf;
-        }
-
-        .skills-section {
-            padding: 60px 100px;
-            text-align: center;
-            color: white;
-        }
-
-        .skills-section h1 {
-            font-size: 2.2rem;
-            margin-bottom: 40px;
-            color: #9c97f1;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .skill-card {
-            background-color: #1f1f3b;
-            padding: 25px 30px;
-            border: 2px solid #9c97f1;
-            border-radius: 12px;
-            width: 280px;
-            text-align: left;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-            background-color: #292960;
-        }
-
-        .skill-card h2 {
-            font-size: 1.3rem;
-            color: #9c97f1;
-            margin-bottom: 10px;
-        }
-
-        .skill-card p {
-            font-size: 0.95rem;
-            color: #cfcfcf;
-            line-height: 1.4;
-        }
-
-        .projects-section {
-            padding: 60px 100px;
-            text-align: center;
-            color: white;
-        }
-
-        .projects-section h1 {
-            font-size: 2.2rem;
-            margin-bottom: 40px;
-            color: #9c97f1;
-        }
-
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .project-card {
-            background-color: #1f1f3b;
-            padding: 25px 30px;
-            border: 2px solid #9c97f1;
-            border-radius: 12px;
-            width: 280px;
-            text-align: left;
-            color: #cfcfcf;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            background-color: #292960;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-        }
-
-        .project-card h2 {
-            font-size: 1.3rem;
-            color: #9c97f1;
-            margin-bottom: 10px;
-        }
-
-        .project-card p {
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-
-        .contact-section {
-            padding: 60px 100px;
-            text-align: center;
-            color: white;
-            background-color: rgb(0, 0, 40);
-        }
-
-        .contact-section h1 {
-            font-size: 2.2rem;
-            color: #9c97f1;
-            margin-bottom: 40px;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 15px;
-            border-radius: 8px;
-            border: 2px solid #9c97f1;
-            background-color: #1f1f3b;
-            color: white;
-            font-size: 1rem;
-            resize: none;
-            outline: none;
-            transition: border 0.3s ease;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: #c8c4f9;
-        }
-
-        .contact-form button {
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            background-color: #9c97f1;
-            color: black;
-            font-weight: bold;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #b8b4fa;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mayank Kumar - Full Stack Developer, AI/ML Enthusiast & Problem Solver from VIT Chennai" />
+  <title>Mayank Kumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Mayank's Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#Project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
 
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi my name is <span style="color: rgb(77, 1, 147);">Mayank</span>
-                <div>I am </div>
-                <span id="element"></span>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand"><img src="avatar.png" alt="Mayank Kumar Avatar" class="nav-avatar" /></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name-text">Mayank Kumar</span>
+      </h1>
+      <div class="hero-typewriter">
+        <span class="static-text">I'm a </span>
+        <span class="dynamic-text" id="dynamicText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Full-stack developer & AI enthusiast crafting intelligent, scalable solutions 
+        that sit at the intersection of <span class="highlight">code</span>, 
+        <span class="highlight">data</span> and <span class="highlight">innovation</span>.
+      </p>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/mayank-kumar-22b9b3287/" target="_blank" class="social-btn linkedin" id="linkedinBtn">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Mayank310805" target="_blank" class="social-btn github" id="githubBtn">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:mayankthakur827@gmail.com" class="social-btn gmail" id="gmailBtn">
+          <i class="fas fa-envelope"></i>
+          <span>Gmail</span>
+        </a>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-3d">
+            <div class="card-inner">
+              <div class="avatar-ring">
+                <img src="avatar.png" alt="Mayank Kumar" class="about-avatar-img" />
+              </div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-num" data-count="10">0</span><span>+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num" data-count="12">0</span><span>+</span>
+                  <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num" data-count="8">0</span><span>+</span>
+                  <span class="stat-label">Certifications</span>
+                </div>
+              </div>
             </div>
-            <div class="rightsection">
-                <img src="Developer.jpg" alt="">
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            I'm <strong>Mayank Kumar</strong>, a passionate Computer Science undergraduate at 
+            <strong>VIT Chennai</strong> with a strong 8.81 CGPA, driven by a love for building 
+            technology that makes a real-world impact.
+          </p>
+          <p>
+            My journey spans full-stack web development, AI/Machine Learning, blockchain technology, 
+            and IoT solutions. I thrive at the intersection of innovative thinking and practical 
+            engineering — whether it's crafting intelligent chatbots, predictive crime analytics 
+            systems, or decentralised land registries.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring the latest breakthroughs in Generative AI and 
+            contributing to open-source projects that push the boundaries of what's possible.
+          </p>
+          <div class="framework-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">GenAI</span>
+            <span class="tag">DSA</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Arduino IDE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education<span class="accent">.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos>
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-badge college">College</span>
+              <span class="timeline-score cgpa">8.81 CGPA</span>
             </div>
-        </section>
-
-        <hr>
-
-        <section class="secondsection" id="Home">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Past Experience</h1>
-            <div class="experience">
-                <div class="exp-item">
-                    <h2>Member of AI Club</h2>
-                    <p>Actively contributed to tech events, workshops, and AI-based projects.</p>
-                </div>
-                <div class="exp-item">
-                    <h2>Operations - MMC</h2>
-                    <p>Managed event logistics and helped streamline club operations in the Magadh Mithila Club.</p>
-                </div>
-                <div class="exp-item">
-                    <h2>SRIP Research Internship - VIT Chennai</h2>
-                    <p>Worked on cutting-edge research in AI and smart cities under SRIP program at VIT Chennai.</p>
-                </div>
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <p class="timeline-inst">Vellore Institute of Technology (VIT), Chennai</p>
+            <p class="timeline-desc">Currently pursuing my undergraduate degree, exploring full-stack development, AI/ML, blockchain, and IoT with a consistent 8.81 CGPA.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos>
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-badge class12">Class XII</span>
+              <span class="timeline-score">90.2%</span>
             </div>
-        </section>
-        <hr>
-        <section class="skills-section" id="skills">
-            <h1>My Skills</h1>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <h2>Web Development</h2>
-                    <p>Skilled in building responsive and modern websites using HTML, CSS, JavaScript, and frameworks
-                        like React.</p>
-                </div>
-                <div class="skill-card">
-                    <h2>Generative AI Tools</h2>
-                    <p>Experienced with AI tools like ChatGPT, Midjourney, and other LLMs to build intelligent and
-                        creative applications.</p>
-                </div>
-                <div class="skill-card">
-                    <h2>Machine Learning</h2>
-                    <p>Hands-on with ML algorithms, model training, and data analysis using Python, Scikit-learn, and
-                        TensorFlow.</p>
-                </div>
-                <div class="skill-card">
-                    <h2>Data Structures & Algorithms</h2>
-                    <p>Strong problem-solving skills with regular practice on platforms like LeetCode and Codeforces.
-                    </p>
-                </div>
+            <h3>Senior Secondary — Science (PCM+CS)</h3>
+            <p class="timeline-inst">Kendriya Vidyalaya</p>
+            <p class="timeline-desc">Secured a stellar 90.2% in CBSE Class XII, laying a strong foundation in Science and Computer Science.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos>
+          <div class="timeline-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-badge class10">Class X</span>
+              <span class="timeline-score">93.4%</span>
             </div>
-        </section>
-        <hr>
-        <section class="projects-section" id="Project">
-            <h1>My Projects</h1>
-            <div class="projects-container">
-                <a href="https://github.com/Mayank310805/StudySphere-Academic-Management-Platform-.git" class="project-card" target="_blank">
-                    <h2>StudySphere</h2>
-                    <p>An organized student dashboard with notes, streaks, to-dos, and study roadmaps.</p>
-                </a>
-                <a href="https://github.com/Mayank310805/MackBot.git" class="project-card" target="_blank">
-                    <h2>MackBot</h2>
-                    <p>A ChatGPT-style AI chatbot assistant built to answer questions intelligently.</p>
-                </a>
-                <a href="https://github.com/Mayank310805/Medical-ChatBot.git" class="project-card" target="_blank">
-                    <h2>Medical Chatbot</h2>
-                    <p>An AI-powered chatbot that helps users with symptom checks and medical guidance.</p>
-                </a>
-                <a href="https://github.com/Mayank310805/LawyerChat.git" class="project-card" target="_blank">
-                    <h2>LawyerChatbot</h2>
-                    <p>Legal assistant bot that explains rights, laws, and offers basic legal advice.</p>
-                </a>
+            <h3>Secondary — All Subjects</h3>
+            <p class="timeline-inst">Kendriya Vidyalaya</p>
+            <p class="timeline-desc">Achieved an outstanding 93.4% in CBSE Class X, showcasing academic excellence from an early stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & <span class="accent">Technologies</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-pill"><i class="fas fa-database"></i> SQL</div>
+            <div class="skill-pill"><span class="pill-icon">C</span> C</div>
+            <div class="skill-pill"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-pill"><span class="pill-icon">C++</span> C++</div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-pill"><i class="fas fa-leaf"></i> MongoDB</div>
+            <div class="skill-pill"><i class="fab fa-node"></i> Express JS</div>
+            <div class="skill-pill"><i class="fab fa-react"></i> React</div>
+            <div class="skill-pill"><i class="fab fa-js"></i> JavaScript</div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-brain"></i>
+            <h3>AI / Machine Learning</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-pill"><i class="fas fa-robot"></i> GenAI</div>
+            <div class="skill-pill"><i class="fas fa-project-diagram"></i> Transformers</div>
+            <div class="skill-pill"><i class="fas fa-chart-line"></i> ML Models</div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-github"></i> GitHub</div>
+            <div class="skill-pill"><span class="pill-icon">M</span> MATLAB</div>
+            <div class="skill-pill"><span class="pill-icon">⭐</span> StarUML</div>
+            <div class="skill-pill"><i class="fas fa-network-wired"></i> Cisco Packet Tracer</div>
+            <div class="skill-pill"><i class="fas fa-microchip"></i> Arduino IDE</div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-python"></i> Pandas</div>
+            <div class="skill-pill"><i class="fas fa-table"></i> Excel</div>
+            <div class="skill-pill"><i class="fas fa-database"></i> SQL</div>
+            <div class="skill-pill"><i class="fas fa-chart-line"></i> Visualization</div>
+            <div class="skill-pill"><i class="fas fa-calculator"></i> Algorithms</div>
+          </div>
+        </div>
+        <div class="skill-category" data-aos>
+          <div class="skill-category-header">
+            <i class="fas fa-microphone-alt"></i>
+            <h3>Vocal & Communication</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fas fa-comments"></i> Public Speaking</div>
+            <div class="skill-pill"><i class="fas fa-users"></i> Team Collaboration</div>
+            <div class="skill-pill"><i class="fas fa-lightbulb"></i> Pitching Ideas</div>
+            <div class="skill-pill"><i class="fas fa-pen-nib"></i> Technical Writing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience<span class="accent">.</span></h2>
+      </div>
+      <div class="experience-cards">
+        <div class="exp-card" data-aos>
+          <div class="exp-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="exp-info">
+            <div class="exp-header">
+              <h3>Data Analyst Intern</h3>
+              <span class="exp-type">Future Interns Startup</span>
             </div>
-        </section>
-        <hr>
-        <section class="contact-section" id="contact">
-            <h1>Contact Me</h1>
-            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> 2026 - Present</span>
+            <p>Working on data analysis projects focused on transforming raw datasets into clear insights, building algorithmic workflows, and supporting decision-making through structured analysis, reporting, and visualization.</p>
+            <div class="exp-tags">
+              <span>Data Analysis</span><span>Algorithms</span><span>Python</span><span>Visualization</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card" data-aos>
+          <div class="exp-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="exp-info">
+            <div class="exp-header">
+              <h3>2nd Position - Solve-A-Thon 2026</h3>
+              <span class="exp-type">Team Mystic, VIT Chennai</span>
+            </div>
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> 2026</span>
+            <p>Secured 2nd position in the theme at Solve-A-Thon 2026, a 24-hour innovation challenge with 100+ teams. Built an All-in-One Smart Hostel Portal to centralize student requests and hostel management workflows, gaining interdisciplinary exposure by solving a CSE-focused problem from a mechanical engineering background.</p>
+            <div class="exp-tags">
+              <span>Hackathon</span><span>Smart Hostel Portal</span><span>Teamwork</span><span>24-hr Sprint</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card" data-aos>
+          <div class="exp-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="exp-info">
+            <div class="exp-header">
+              <h3>Hackathon Finalist — Top 50 Teams</h3>
+              <span class="exp-type">VIT–SanDisk Hackathon 2026, VIT Vellore</span>
+            </div>
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> 2026</span>
+            <p>Designed RRA-FTL (Reliability-Remaining Adaptive Flash Translation Layer) — a simulation-driven firmware approach that shifts SSD management from usage-based to remaining-life-based optimization using Weibull reliability modeling.</p>
+            <div class="exp-tags">
+              <span>Firmware</span><span>SSD Optimization</span><span>Weibull Modeling</span><span>Simulation</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card" data-aos>
+          <div class="exp-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="exp-info">
+            <div class="exp-header">
+              <h3>Hackathon Participant</h3>
+              <span class="exp-type">Hack-N-Droid, Android Club VIT Chennai</span>
+            </div>
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
+            <p>Spearheaded design and delivery of a full-stack mobile app prototype within a 24-hour hackathon, using Flutter (frontend) and Firebase (backend) for an open-world problem statement.</p>
+            <div class="exp-tags">
+              <span>Flutter</span><span>Firebase</span><span>Mobile Dev</span><span>24-hr Sprint</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
 
-    </main>
+        <div class="project-card featured" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-link"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/land-registry" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Land Registration using BlockChain</h3>
+          <p>A decentralised land registry system built on blockchain to eliminate fraudulent property transactions. Ensures transparency, immutability and trustless verification of land ownership records.</p>
+          <div class="project-tech">
+            <span>Solidity</span><span>Blockchain</span><span>Web3</span><span>React</span>
+          </div>
+          <span class="project-tag">🏆 Featured</span>
+        </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['<i>Web</i> developer.', 'ML enthusiast.','Generative AI enthusiast'],
-            typeSpeed: 50,
-        });
-    </script>
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/CrimeLens---A-predictive-hotspots-for-safety-in-urban-cities" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>CrimeLens</h3>
+          <p>An AI-powered predictive analytics platform that forecasts crime hotspots in urban areas, empowering law enforcement and citizens to make data-driven safety decisions.</p>
+          <div class="project-tech">
+            <span>Python</span><span>ML</span><span>GeoPandas</span><span>React</span>
+          </div>
+          <span class="project-tag">🤖 AI/ML</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/welldoc-hackathon" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>GlucoGuard</h3>
+          <p>A diabetes management platform developed during the WellDoc Hackathon. Combines ML predictions with personalised health tracking to help patients and doctors monitor glucose levels effectively.</p>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>React</span><span>GenAI</span>
+          </div>
+          <span class="project-tag">🏥 Healthcare</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/StudySphere-Academic-Management-Platform-" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>StudySphere Academic Platform</h3>
+          <p>A comprehensive academic management system for students and faculty — featuring assignment tracking, grade analytics, resource sharing, and real-time collaboration tools.</p>
+          <div class="project-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+          </div>
+          <span class="project-tag">📚 EdTech</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/Medical-ChatBot" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Medical Chatbot</h3>
+          <p>An intelligent medical chatbot powered by context-aware transformers and GenAI. Provides symptom analysis, health information, and preliminary medical guidance with high conversational accuracy.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Transformers</span><span>GenAI</span><span>NLP</span>
+          </div>
+          <span class="project-tag">🤖 GenAI</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-hand-paper"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/IMUFree-Gesture-SOS" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>IMU-Free Gesture SOS</h3>
+          <p>A micro-gesture based emergency alert system using ESP32, IR proximity sensing, FSR force detection, BLE communication, and a real-time Web Bluetooth dashboard.</p>
+          <div class="project-tech">
+            <span>ESP32</span><span>BLE</span><span>JavaScript</span><span>IoT</span>
+          </div>
+          <span class="project-tag">IoT Safety</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-building-user"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/smart_hostel" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Smart Hostel Portal</h3>
+          <p>An all-in-one hostel management platform designed to simplify student requests, daily operations, and administrative workflows through a centralized digital portal.</p>
+          <div class="project-tech">
+            <span>MERN</span><span>Portal</span><span>Automation</span><span>UX</span>
+          </div>
+          <span class="project-tag">Hackathon Build</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-lock"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/crypto-firmware-detector" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Crypto Firmware Detector</h3>
+          <p>A security-focused tool for identifying cryptographic indicators in firmware and code artifacts, helping surface encryption usage for review and embedded-system analysis.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Security</span><span>Firmware</span><span>Static Analysis</span>
+          </div>
+          <span class="project-tag">Cybersecurity</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fab fa-youtube"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/yt_optimize" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>YT Optimize</h3>
+          <p>A YouTube optimization project combining TypeScript and Python to support content analysis, performance insights, and smarter creator-side decision-making.</p>
+          <div class="project-tech">
+            <span>TypeScript</span><span>Python</span><span>Analytics</span><span>Optimization</span>
+          </div>
+          <span class="project-tag">Creator Tools</span>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-clipboard-question"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Mayank310805/Nptel-Quiz" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://nptel-quiz-sigma.vercel.app" target="_blank" title="Live Demo">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3>NPTEL Quiz</h3>
+          <p>A Vite-powered quiz application for NPTEL-style practice, focused on fast interaction, clean question flow, and lightweight web deployment.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>Vite</span><span>CSS</span><span>Vercel</span>
+          </div>
+          <span class="project-tag">EdTech</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certs-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications<span class="accent">.</span></h2>
+      </div>
+      <div class="certs-grid">
+        <a class="cert-card cert-card-link" data-aos href="https://drive.google.com/file/d/18bMv1N0ht9f2dgnMmkV6uDDG3rvKRQ7d/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="View Certificate">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <div class="cert-info">
+            <h4>IBM Watsonx Generative AI</h4>
+            <p>IBM</p>
+          </div>
+          <span class="cert-badge verified">✓</span>
+          <i class="fas fa-external-link-alt cert-link-icon"></i>
+        </a>
+        <a class="cert-card cert-card-link" data-aos href="https://drive.google.com/file/d/1TnnDO_PsXK7v7Q_NWyw-Sh2ZMy2ImOtP/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="View Certificate">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <div class="cert-info">
+            <h4>SanDisk Hackathon Top 50</h4>
+            <p>VIT Vellore</p>
+          </div>
+          <span class="cert-badge verified">✓</span>
+          <i class="fas fa-external-link-alt cert-link-icon"></i>
+        </a>
+        <a class="cert-card cert-card-link" data-aos href="https://drive.google.com/file/d/1nRJ826Iw-jaC7x-teSKZChNpcF-gioOf/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="View Certificate">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-info">
+            <h4>Python, C, C++ — Spoken Tutorial</h4>
+            <p>IIT Bombay</p>
+          </div>
+          <span class="cert-badge verified">✓</span>
+          <i class="fas fa-external-link-alt cert-link-icon"></i>
+        </a>
+        <a class="cert-card cert-card-link" data-aos href="https://drive.google.com/file/d/1hg8IxVORWTkJl59ilP3PIVqg0gwpHHvK/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="View Certificate">
+          <div class="cert-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="cert-info">
+            <h4>App Development Hackathon</h4>
+            <p>Android Club VIT Chennai</p>
+          </div>
+          <span class="cert-badge verified">✓</span>
+          <i class="fas fa-external-link-alt cert-link-icon"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-subtitle">I'm open to full-time roles, internships, collaborations and freelance opportunities. Drop a message and I'll get back to you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item" data-aos>
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:mayankthakur827@gmail.com" class="contact-value">mayankthakur827@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" data-aos>
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">VIT Chennai, Tamil Nadu, India</span>
+            </div>
+          </div>
+          <div class="contact-item" data-aos>
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mayank-kumar-22b9b3287/" target="_blank" class="contact-value">mayank-kumar-22b9b3287</a>
+            </div>
+          </div>
+          <div class="contact-item" data-aos>
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Mayank310805" target="_blank" class="contact-value">Mayank310805</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="formName" placeholder="Your Name" required autocomplete="off" />
+            <label for="formName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder="Your Email" required autocomplete="off" />
+            <label for="formEmail">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="formSubject" placeholder="Subject" autocomplete="off" />
+            <label for="formSubject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea>
+            <label for="formMessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand"><img src="avatar.png" alt="Mayank Kumar" class="nav-avatar" /></div>
+      <p>Designed & Built by <strong>Mayank Kumar</strong> with ❤️ and a lot of ☕</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/mayank-kumar-22b9b3287/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Mayank310805" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:mayankthakur827@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2024 Mayank Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
